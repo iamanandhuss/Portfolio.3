@@ -1,16 +1,66 @@
-# React + Vite
+# Anandhu S S — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A personal portfolio for full-stack developer Anandhu S S. The site presents selected projects, technical skills, experience, education, and contact links in a responsive, editorial-style interface.
 
-Currently, two official plugins are available:
+## Built with
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19
+- Vite 8
+- Tailwind CSS 4
+- Framer Motion
+- Lucide React
 
-## React Compiler
+## Getting started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Requirements
 
-## Expanding the Oxlint configuration
+- Node.js 20.19+ or 22.12+
+- npm
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Install and run locally
+
+```bash
+npm install
+npm run dev
+```
+
+Vite prints the local development URL in the terminal when the server is ready.
+
+## Available commands
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the local development server with hot-module replacement. |
+| `npm run build` | Create a production build in `dist/`. |
+| `npm run preview` | Preview the production build locally. Run `npm run build` first. |
+| `npm run lint` | Run Oxlint against the project. |
+
+## Project structure
+
+```text
+src/
+├── assets/       # Images and other imported assets
+├── components/   # Portfolio sections and reusable UI
+├── data/         # Project, skill, and experience content
+├── App.jsx       # Page composition
+├── index.css     # Global styles
+└── main.jsx      # Application entry point
+public/           # Static files served from the site root
+```
+
+## Updating portfolio content
+
+- Edit `src/data/projects.js` to update featured and additional projects.
+- Edit `src/data/skills.js` to change the listed skills.
+- Edit `src/data/experience.js` to update experience and education details.
+- Update the relevant component in `src/components/` to change a section's layout or copy.
+- Add imported images to `src/assets/`, or static files to `public/`.
+
+## Production build
+
+```bash
+npm run build
+npm run preview
+```
+
+The optimized site is generated in `dist/`. Deploy that directory using a static hosting provider that supports single-page Vite applications.
