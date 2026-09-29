@@ -19,7 +19,7 @@ const Stack = () => {
             <h3 className="font-inter text-sm md:text-base font-bold tracking-widest uppercase mb-4 text-[var(--black)] group-hover:text-[var(--lime)] transition-colors">
               {skill.title}
             </h3>
-            <p className="font-inter text-lg md:text-xl font-medium leading-relaxed text-[var(--muted)] group-hover:text-[var(--black)] transition-colors">
+            <p className="font-inter text-lg md:text-xl font-medium leading-loose text-[var(--muted)] group-hover:text-[var(--black)] transition-colors">
               {skill.technologies}
             </p>
           </div>

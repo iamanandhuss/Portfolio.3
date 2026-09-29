@@ -52,7 +52,7 @@ const About = () => {
             CORE CAPABILITIES
           </div>
           
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 min-[430px]:grid-cols-2 gap-4">
             {capabilities.map((cap, idx) => (
               <div key={idx} className="bg-[var(--white)] brutal-border px-4 py-4 font-inter text-sm md:text-base font-bold tracking-widest uppercase text-center hover:bg-[var(--lime)] hover:brutal-shadow-sm transition-all cursor-default flex items-center justify-center">
                 {cap}

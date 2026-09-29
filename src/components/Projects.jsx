@@ -29,8 +29,8 @@ const Projects = () => {
           {additionalProjects.map((proj, idx) => (
             <a 
               key={idx} 
-              href={proj.url}
-              className="group flex flex-col sm:flex-row items-start sm:items-center justify-between py-6 px-4 -mx-4 md:px-6 md:-mx-6 brutal-border-b hover:bg-[var(--dark)] hover:text-[var(--paper)] transition-colors cursor-pointer"
+              href={proj.url !== "#" ? proj.url : undefined}
+              className="group flex flex-col sm:flex-row items-start sm:items-center justify-between py-4 md:py-6 px-4 -mx-4 md:px-6 md:-mx-6 brutal-border-b hover:bg-[var(--dark)] hover:text-[var(--paper)] transition-colors cursor-pointer"
             >
               <div className="font-inter font-bold text-lg md:text-xl uppercase mb-3 sm:mb-0 group-hover:text-[var(--lime)] transition-colors">
                 {proj.title}

@@ -12,13 +12,13 @@ const Contact = () => {
             // CONTACT
           </div>
           
-          <h2 className="font-barlow font-extrabold text-[clamp(4rem,9vw,9rem)] leading-[0.85] tracking-[-0.04em] mb-8 uppercase text-[var(--paper)]">
+          <h2 className="font-barlow font-extrabold text-[clamp(4rem,9vw,8rem)] xl:text-[9rem] leading-[0.85] tracking-[-0.04em] mb-8 uppercase text-[var(--paper)]">
             HAVE AN <br />
             IDEA? <br />
             <span className="text-[var(--lime)]">LET'S <br/> BUILD IT.</span>
           </h2>
           
-          <a href="mailto:anandhu.codes@gmail.com" className="inline-flex items-center gap-3 bg-[var(--lime)] text-[var(--black)] font-inter font-bold uppercase tracking-wider text-sm md:text-base px-10 py-5 brutal-shadow hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none hover:bg-[var(--white)] transition-all mt-6 group">
+          <a href="mailto:anandhu.codes@gmail.com" className="inline-flex items-center gap-3 bg-[var(--lime)] text-[var(--black)] font-inter font-bold uppercase tracking-wider text-sm md:text-base px-10 py-5 brutal-shadow hover:bg-[var(--white)] transition-colors mt-6 group">
             <Mail size={20} /> EMAIL ME <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform"/>
           </a>
         </div>

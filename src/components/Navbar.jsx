@@ -23,9 +23,10 @@ const Navbar = () => {
         {/* Mobile Menu Icon */}
         <div className="md:hidden flex items-center">
           <button 
-            aria-label="Menu" 
+            aria-label="Toggle Menu"
+            aria-expanded={isOpen}
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2 border border-[var(--black)] brutal-shadow-sm hover:bg-[var(--lime)] transition-colors bg-[var(--white)]"
+            className="p-2 border border-[var(--black)] brutal-shadow-sm hover:bg-[var(--lime)] transition-colors bg-[var(--white)] relative z-[60]"
           >
             {isOpen ? <X size={20} color="var(--black)" /> : <Menu size={20} color="var(--black)" />}
           </button>
@@ -34,11 +35,11 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-[var(--paper)] brutal-border-b flex flex-col font-inter text-lg font-bold tracking-widest uppercase p-4 space-y-4 shadow-xl">
-          <a href="#work" onClick={() => setIsOpen(false)} className="hover:text-[var(--lime)] hover:bg-[var(--black)] p-4 brutal-border bg-[var(--white)]">Work</a>
-          <a href="#about" onClick={() => setIsOpen(false)} className="hover:text-[var(--lime)] hover:bg-[var(--black)] p-4 brutal-border bg-[var(--white)]">About</a>
-          <a href="#stack" onClick={() => setIsOpen(false)} className="hover:text-[var(--lime)] hover:bg-[var(--black)] p-4 brutal-border bg-[var(--white)]">Skills</a>
-          <a href="#contact" onClick={() => setIsOpen(false)} className="hover:text-[var(--lime)] hover:bg-[var(--black)] p-4 brutal-border bg-[var(--white)]">Contact</a>
+        <div className="md:hidden fixed inset-0 z-50 h-screen w-screen bg-[var(--paper)] pt-24 flex flex-col font-inter text-xl font-bold tracking-widest uppercase p-4 space-y-4">
+          <a href="#work" onClick={() => setIsOpen(false)} className="hover:text-[var(--lime)] hover:bg-[var(--black)] p-6 brutal-border bg-[var(--white)] text-center">Work</a>
+          <a href="#about" onClick={() => setIsOpen(false)} className="hover:text-[var(--lime)] hover:bg-[var(--black)] p-6 brutal-border bg-[var(--white)] text-center">About</a>
+          <a href="#stack" onClick={() => setIsOpen(false)} className="hover:text-[var(--lime)] hover:bg-[var(--black)] p-6 brutal-border bg-[var(--white)] text-center">Skills</a>
+          <a href="#contact" onClick={() => setIsOpen(false)} className="hover:text-[var(--lime)] hover:bg-[var(--black)] p-6 brutal-border bg-[var(--white)] text-center">Contact</a>
         </div>
       )}
     </nav>
